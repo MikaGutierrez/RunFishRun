@@ -4,6 +4,22 @@ using UnityEngine;
 
 public class CharacterMovement : MonoBehaviour
 {
+    //Color for Fish
+    public SpriteRenderer HeadRenderer;
+    public SpriteRenderer BodyRenderer;
+    public SpriteRenderer TailRenderer;
+    public Color ColorRaw;
+    public Color ColorWellDone;
+    public Color ColorDead;
+    public Color ColorNow;
+
+    //Stamina
+    public float stamina = 100;
+    public float staminaMin = 0;
+    public float staminaMax = 100;
+    public float staminaSpeed;
+    public bool staminaWork = true;
+
     //For Movement
     public float speed;
     private float moveInput;
@@ -13,6 +29,9 @@ public class CharacterMovement : MonoBehaviour
     public float jumpTimeCounter;
     public float jumpTime;
     public bool isJumping;
+
+    //For Rotation
+    public float rotateSpeed;
 
     //Ground Check
     private bool isGrounded;
@@ -39,26 +58,40 @@ public class CharacterMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-        moveInput = Input.GetAxis("Horizontal");
-        rb.velocity = new Vector2(moveInput * speed, rb.velocity.y);
+
+        if (isGrounded == false)
+        {
+            moveInput = Input.GetAxis("Horizontal");
+            rb.velocity = new Vector2(moveInput * speed, rb.velocity.y);
+            if (moveInput > 0)
+            {
+                transform.Rotate(Vector3.forward, -rotateSpeed);
+            }
+            else if (moveInput < 0)
+            {
+                transform.Rotate(Vector3.forward, rotateSpeed);
+            }
+        }
     }
 
     void Update()
     {
-
-        if (moveInput > 0 && facingRight)
-        {
-            Flip();
-            facingRight = false;
+        if (staminaWork == true && staminaMin < stamina)
+        { 
+            stamina = stamina - Time.deltaTime * staminaSpeed;
         }
-
-        if (moveInput < 0 && !facingRight)
+        if (staminaMax < stamina)
         {
-            Flip();
-            facingRight = true;
+            stamina = staminaMax;
         }
-
-
+        if (staminaMin > stamina)
+        {
+            stamina = staminaMin;
+        }
+        HeadRenderer.color = ColorNow;
+        BodyRenderer.color = ColorNow;
+        TailRenderer.color = ColorNow;
+        ColorNow = ColorRaw * (stamina* 0.01f) + ColorWellDone * (1 - stamina * 0.01f);
 
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, whatIsGround);
 
@@ -96,15 +129,6 @@ public class CharacterMovement : MonoBehaviour
         }
 
 
-    }
-
-    private void Flip()
-    {
-        // Rotate the player
-        if (transform.localEulerAngles.y != 180 && !facingRight)
-            transform.Rotate(0f, -180f, 0f);
-        else if (transform.localEulerAngles.y != 0 && facingRight)
-            transform.Rotate(0f, 180f, 0f);
     }
 
 
