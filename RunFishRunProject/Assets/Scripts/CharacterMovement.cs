@@ -102,9 +102,9 @@ public class CharacterMovement : MonoBehaviour
     {
         // Rotate the player
         if (transform.localEulerAngles.y != 180 && !facingRight)
-            transform.Rotate(0f, 180f, 0f);
-        else if (transform.localEulerAngles.y != 0 && facingRight)
             transform.Rotate(0f, -180f, 0f);
+        else if (transform.localEulerAngles.y != 0 && facingRight)
+            transform.Rotate(0f, 180f, 0f);
     }
 
 
