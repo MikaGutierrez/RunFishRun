@@ -3,16 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Miguel\\Documents\\GitHub\\RunFishRun\\RunFishRunProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{91F82ADD-F08A-2A99-9218-13D72DE6B620}|Assembly-CSharp.csproj|c:\\users\\miguel\\documents\\github\\runfishrun\\runfishrunproject\\assets\\scripts\\boxwithfruits.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{91F82ADD-F08A-2A99-9218-13D72DE6B620}|Assembly-CSharp.csproj|c:\\users\\miguel\\documents\\github\\runfishrun\\runfishrunproject\\assets\\scripts\\carspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91F82ADD-F08A-2A99-9218-13D72DE6B620}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\carspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91F82ADD-F08A-2A99-9218-13D72DE6B620}|Assembly-CSharp.csproj|C:\\Users\\Miguel\\Documents\\GitHub\\RunFishRun\\RunFishRunProject\\assets\\scripts\\boxwithfruits.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{91F82ADD-F08A-2A99-9218-13D72DE6B620}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\boxwithfruits.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{91F82ADD-F08A-2A99-9218-13D72DE6B620}|Assembly-CSharp.csproj|c:\\users\\miguel\\documents\\github\\runfishrun\\runfishrunproject\\assets\\scripts\\apple.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{91F82ADD-F08A-2A99-9218-13D72DE6B620}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\apple.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{91F82ADD-F08A-2A99-9218-13D72DE6B620}|Assembly-CSharp.csproj|C:\\Users\\Miguel\\Documents\\GitHub\\RunFishRun\\RunFishRunProject\\assets\\scripts\\puddle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91F82ADD-F08A-2A99-9218-13D72DE6B620}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\puddle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{91F82ADD-F08A-2A99-9218-13D72DE6B620}|Assembly-CSharp.csproj|C:\\Users\\Miguel\\Documents\\GitHub\\RunFishRun\\RunFishRunProject\\assets\\scripts\\charactermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{91F82ADD-F08A-2A99-9218-13D72DE6B620}|Assembly-CSharp.csproj|c:\\users\\miguel\\documents\\github\\runfishrun\\runfishrunproject\\assets\\scripts\\charactermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{91F82ADD-F08A-2A99-9218-13D72DE6B620}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\charactermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91F82ADD-F08A-2A99-9218-13D72DE6B620}|Assembly-CSharp.csproj|C:\\Users\\Miguel\\Documents\\GitHub\\RunFishRun\\RunFishRunProject\\assets\\scripts\\animation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91F82ADD-F08A-2A99-9218-13D72DE6B620}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\animation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91F82ADD-F08A-2A99-9218-13D72DE6B620}|Assembly-CSharp.csproj|C:\\Users\\Miguel\\Documents\\GitHub\\RunFishRun\\RunFishRunProject\\assets\\scripts\\effectcode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91F82ADD-F08A-2A99-9218-13D72DE6B620}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\effectcode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,38 +39,77 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "BoxWithFruits.cs",
-              "DocumentMoniker": "C:\\Users\\Miguel\\Documents\\GitHub\\RunFishRun\\RunFishRunProject\\Assets\\Scripts\\BoxWithFruits.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\BoxWithFruits.cs",
-              "ToolTip": "C:\\Users\\Miguel\\Documents\\GitHub\\RunFishRun\\RunFishRunProject\\Assets\\Scripts\\BoxWithFruits.cs",
-              "RelativeToolTip": "Assets\\Scripts\\BoxWithFruits.cs",
-              "ViewState": "AQIAACMAAAAAAAAAAAAgwCoAAAAFAAAA",
+              "Title": "CarSpawner.cs",
+              "DocumentMoniker": "C:\\Users\\Miguel\\Documents\\GitHub\\RunFishRun\\RunFishRunProject\\Assets\\Scripts\\CarSpawner.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\CarSpawner.cs",
+              "ToolTip": "C:\\Users\\Miguel\\Documents\\GitHub\\RunFishRun\\RunFishRunProject\\Assets\\Scripts\\CarSpawner.cs",
+              "RelativeToolTip": "Assets\\Scripts\\CarSpawner.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAYwBcAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-06T20:21:56.293Z",
+              "WhenOpened": "2024-09-07T13:09:23.255Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Apple.cs",
-              "DocumentMoniker": "C:\\Users\\Miguel\\Documents\\GitHub\\RunFishRun\\RunFishRunProject\\Assets\\Scripts\\Apple.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Apple.cs",
-              "ToolTip": "C:\\Users\\Miguel\\Documents\\GitHub\\RunFishRun\\RunFishRunProject\\Assets\\Scripts\\Apple.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Apple.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAA+wAQAAAAiAAAA",
+              "Title": "BoxWithFruits.cs",
+              "DocumentMoniker": "C:\\Users\\Miguel\\Documents\\GitHub\\RunFishRun\\RunFishRunProject\\Assets\\Scripts\\BoxWithFruits.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\BoxWithFruits.cs",
+              "ToolTip": "C:\\Users\\Miguel\\Documents\\GitHub\\RunFishRun\\RunFishRunProject\\Assets\\Scripts\\BoxWithFruits.cs",
+              "RelativeToolTip": "Assets\\Scripts\\BoxWithFruits.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAAgwC4AAACBAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-06T19:42:25.688Z",
+              "WhenOpened": "2024-09-07T11:59:41.001Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EffectCode.cs",
+              "DocumentMoniker": "C:\\Users\\Miguel\\Documents\\GitHub\\RunFishRun\\RunFishRunProject\\Assets\\Scripts\\EffectCode.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\EffectCode.cs",
+              "ToolTip": "C:\\Users\\Miguel\\Documents\\GitHub\\RunFishRun\\RunFishRunProject\\Assets\\Scripts\\EffectCode.cs",
+              "RelativeToolTip": "Assets\\Scripts\\EffectCode.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-07T11:52:06.31Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Animation.cs",
+              "DocumentMoniker": "C:\\Users\\Miguel\\Documents\\GitHub\\RunFishRun\\RunFishRunProject\\Assets\\Scripts\\Animation.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Animation.cs",
+              "ToolTip": "C:\\Users\\Miguel\\Documents\\GitHub\\RunFishRun\\RunFishRunProject\\Assets\\Scripts\\Animation.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Animation.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-07T10:39:53.547Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Puddle.cs",
+              "DocumentMoniker": "C:\\Users\\Miguel\\Documents\\GitHub\\RunFishRun\\RunFishRunProject\\Assets\\Scripts\\Puddle.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Puddle.cs",
+              "ToolTip": "C:\\Users\\Miguel\\Documents\\GitHub\\RunFishRun\\RunFishRunProject\\Assets\\Scripts\\Puddle.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Puddle.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAAwBUAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-07T10:28:55.005Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "CharacterMovement.cs",
               "DocumentMoniker": "C:\\Users\\Miguel\\Documents\\GitHub\\RunFishRun\\RunFishRunProject\\Assets\\Scripts\\CharacterMovement.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\CharacterMovement.cs",
               "ToolTip": "C:\\Users\\Miguel\\Documents\\GitHub\\RunFishRun\\RunFishRunProject\\Assets\\Scripts\\CharacterMovement.cs",
               "RelativeToolTip": "Assets\\Scripts\\CharacterMovement.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAADUAAAAFAAAA",
+              "ViewState": "AQIAAI0AAAAAAAAAAAAowD8AAABjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-06T17:03:01.783Z",
               "EditorCaption": ""

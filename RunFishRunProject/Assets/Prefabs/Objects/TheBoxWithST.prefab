@@ -75,7 +75,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -2
   m_Sprite: {fileID: 21300000, guid: 79b1279b4b70e6849a495fbfaf6c24d4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b44555656e8232a45b2d8b309cb11157, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animation: {fileID: 1924039369101857192}
+  animationNew: {fileID: 1924039369101857192}
   animationNames:
   - Idle
   - Idle2

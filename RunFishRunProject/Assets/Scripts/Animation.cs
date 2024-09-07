@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Animation : MonoBehaviour
 {
-    public Animator animation;
+    public Animator animationNew;
     public string[] animationNames;
     private string currentState;
     //ChangeAnimationState(Name);
@@ -12,7 +12,7 @@ public class Animation : MonoBehaviour
     public void ChangeAnimationState(string newState)
     {
         if (currentState == newState) return;
-        animation.Play(newState);
+        animationNew.Play(newState);
         currentState = newState;
     }
 }

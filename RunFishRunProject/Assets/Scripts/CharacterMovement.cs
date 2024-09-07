@@ -10,7 +10,6 @@ public class CharacterMovement : MonoBehaviour
     public SpriteRenderer TailRenderer;
     public Color ColorRaw;
     public Color ColorWellDone;
-    public Color ColorDead;
     public Color ColorNow;
 
     //Stamina
@@ -45,12 +44,26 @@ public class CharacterMovement : MonoBehaviour
    // public Animator Head_Animator;
 
     bool facingRight;
-
+    //GameObjects
+    public GameObject SplashEffect;
 
     //Rigidbody2D
     private Rigidbody2D rb;
 
-
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.tag == "Puddle")
+        {
+            stamina = stamina + Time.deltaTime * staminaSpeed * 3;
+        }
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Puddle")
+        {
+            Instantiate(SplashEffect, new Vector3(transform.position.x, transform.position.y - 0.34f, 0f), Quaternion.Euler(0f, 0f, 0f));
+        }
+    }
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -92,7 +105,9 @@ public class CharacterMovement : MonoBehaviour
         HeadRenderer.color = ColorNow;
         BodyRenderer.color = ColorNow;
         TailRenderer.color = ColorNow;
-        ColorNow = ColorRaw * (stamina* 0.01f) + ColorWellDone * (1 - stamina * 0.01f);
+        //ColorNow = ColorRaw * (stamina* 0.01f) + ColorWellDone * (1 - stamina * 0.01f);
+
+        ColorNow = ColorRaw * (stamina * 0.01f) + ColorWellDone * (1 - stamina * 0.01f);
 
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, whatIsGround);
 
