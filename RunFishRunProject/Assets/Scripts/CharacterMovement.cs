@@ -41,7 +41,8 @@ public class CharacterMovement : MonoBehaviour
 
 
     public GameObject Player;
-    //Animator Char_Animator;
+    //public Animator Tail_Animator;
+   // public Animator Head_Animator;
 
     bool facingRight;
 
@@ -96,13 +97,20 @@ public class CharacterMovement : MonoBehaviour
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, whatIsGround);
 
         if (isGrounded == true && Input.GetKeyDown(KeyCode.Space))
-        {
+        {         
             isJumping = true;
             jumpTimeCounter = jumpTime;
             rb.velocity = Vector2.up * jumpForce;
 
         }
 
+        //if (isGrounded == true)
+        //{
+        //    Head_Animator.SetBool("IsMoving", false);
+        //    Tail_Animator.SetBool("IsMoving", false);
+        //}
+        //else Head_Animator.SetBool("IsMoving", true);
+        //Tail_Animator.SetBool("IsMoving", true);
 
 
         if (Input.GetKey(KeyCode.Space) && isJumping == true)
