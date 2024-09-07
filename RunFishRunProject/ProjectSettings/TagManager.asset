@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Puddle
   - Car
+  - Leg
   layers:
   - Default
   - TransparentFX

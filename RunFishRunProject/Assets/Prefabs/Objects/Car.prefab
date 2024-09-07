@@ -122,7 +122,7 @@ GameObject:
   - component: {fileID: 1764514028257778232}
   m_Layer: 0
   m_Name: Collider
-  m_TagString: Untagged
+  m_TagString: Car
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -367,5 +367,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee83efb5706ee4f4aa26d2a390650063, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lifeTime: 50
+  lifeTime: 17
   Self: {fileID: 6946019221439892414}
