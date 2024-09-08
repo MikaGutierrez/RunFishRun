@@ -12,6 +12,8 @@ public class Crab : Animation
     public bool OnChillZone = false;
     private int Escape = 0;
     private bool YeldWork = false;
+    public BoxCollider2D CrabCollider;
+    public GameObject Claws;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,11 +23,10 @@ public class Crab : Animation
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "ChillCrabZone" && OnChillZone == false)
+        if (collision.tag == "ChillCrabZone" && OnChillZone == false && Claws.GetComponent<CrabClaws>().HaveAFish == false && YeldWork == false)
         {
             Escape = Random.Range(0, 2);
             OnChillZone = true;
-            Debug.Log(Escape);
             if (Escape == 1)
             {
                 StartCoroutine(Hide());
@@ -35,7 +36,7 @@ public class Crab : Animation
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.tag == "ChillCrabZone" && OnChillZone == true)
+        if (collision.tag == "ChillCrabZone" && OnChillZone == true && YeldWork == false)
         {
             OnChillZone = false;
         }
@@ -45,9 +46,13 @@ public class Crab : Animation
     // Update is called once per frame
     void Update()
     {
-        if (YeldWork == false)
+        if (YeldWork == false && Claws.GetComponent<CrabClaws>().HaveAFish == false)
         {
             ChangeAnimationState(animationNames[0]);
+        }
+        else if (YeldWork == false && Claws.GetComponent<CrabClaws>().HaveAFish == true)
+        {
+            ChangeAnimationState(animationNames[5]);
         }
         rb.velocity = new Vector2(moveInput * speed * speedWork, rb.velocity.y);
     }
@@ -93,6 +98,8 @@ public class Crab : Animation
     }
     private IEnumerator Hide()
     {
+        OnChillZone = true;
+        CrabCollider.enabled = false;
         speedWork = 0;
         ChangeAnimationState(animationNames[2]);
         YeldWork = true;
@@ -107,6 +114,7 @@ public class Crab : Animation
         yield return new WaitForSeconds(0.7f);
         YeldWork = false;
         speedWork = 1;
+        CrabCollider.enabled = true;
     }
 
     public void ChooseRandomDeareection()

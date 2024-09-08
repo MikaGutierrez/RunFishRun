@@ -8,6 +8,13 @@ TagManager:
   - Car
   - Leg
   - ChillCrabZone
+  - Crab
+  - CrabTP
+  - Gum
+  - Trampoline
+  - Seagull
+  - SeagullTarget
+  - SeagullTP
   layers:
   - Default
   - TransparentFX
@@ -16,8 +23,8 @@ TagManager:
   - Water
   - UI
   - Ground
-  - 
-  - 
+  - Player
+  - CrabChillZone
   - 
   - 
   - 

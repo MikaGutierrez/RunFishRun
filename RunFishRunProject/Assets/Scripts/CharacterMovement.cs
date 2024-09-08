@@ -52,12 +52,35 @@ public class CharacterMovement : MonoBehaviour
     public GameObject FishWallEffect;
     public GameObject RespawnCarPlace;
     public GameObject StopPanel;
+    public GameObject GameOverPanel;
+    public GameObject Ghost;
+    private float GumForce = 1;
 
     //Rigidbody2D
     private Rigidbody2D rb;
 
     //Coroutine
     private bool YeldWork = false;
+    private bool GameOverBool = false;
+    private bool SendedGhsot = false;
+
+    private bool StackIn = false;
+    //Крабы
+    private GameObject[] Crabs;
+    private GameObject TheClousestCrab;
+    private bool StackInCrab;
+    private float MaxCrabfloat = 40;
+    private float MinCrabfloat = 0;
+    public float Crabfloat = 0;
+
+
+    //Чайки
+    private GameObject[] Seagulls;
+    public GameObject TheClousestSeagull;
+    private bool StackInSeagull;
+    private float MaxSeagullfloat = 40;
+    private float MinSeagullfloat = 0;
+    public float Seagullfloat = 0;
 
     private void OnTriggerStay2D(Collider2D collision)
     {
@@ -77,15 +100,39 @@ public class CharacterMovement : MonoBehaviour
         {
             StartCoroutine(CrashWithCar());
         }
-
         if (collision.tag == "Leg")
         {
             StartCoroutine(GetALeg());
         }
+        if (collision.tag == "Crab")
+        {
+            StackIn = true;
+            StackInCrab = true;
+        }
+        if (collision.tag == "Seagull")
+        {
+            StackIn = true;
+            StackInSeagull = true;
+        }
+        if (collision.tag == "Gum")
+        {
+            GumForce = 0.45f;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.tag == "Gum")
+        {
+            GumForce = 1f;
+        }
+        
     }
     void Start()
     {
+        Crabs = GameObject.FindGameObjectsWithTag("CrabTP");
         StopPanel.SetActive(false);
+        GameOverPanel.SetActive(false);
         Time.timeScale = 1f;
         IsGameStopped = false;
         rb = GetComponent<Rigidbody2D>();
@@ -94,8 +141,9 @@ public class CharacterMovement : MonoBehaviour
 
     void FixedUpdate()
     {
+        Seagulls = GameObject.FindGameObjectsWithTag("SeagullTP");
 
-        if (isGrounded == false && YeldWork == false)
+        if (isGrounded == false && YeldWork == false && StackInCrab == false)
         {
             moveInput = Input.GetAxis("Horizontal");
             rb.velocity = new Vector2(moveInput * speed, rb.velocity.y);
@@ -112,6 +160,65 @@ public class CharacterMovement : MonoBehaviour
 
     void Update()
     {
+        if (StackInCrab == true)
+        {
+            transform.eulerAngles = new Vector3(0, 0, 0);
+            if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D))
+            {
+                Crabfloat += 0.1f;
+            }
+            else
+            {
+                Crabfloat = Crabfloat - Time.deltaTime * 100;
+            }
+
+            transform.position = TheClousestCrab.transform.position;
+            if (MaxCrabfloat <= Crabfloat)
+            {
+                StackInCrab = false;
+                StackIn = false;
+                rb.velocity = Vector2.up * 30;
+                Crabfloat = 0;
+            }
+            if (MinCrabfloat >= Crabfloat)
+            {
+                Crabfloat = MinCrabfloat;
+            }
+
+        }
+
+        if (StackInSeagull == true)
+        {
+            transform.eulerAngles = new Vector3(0, 0,-29.274f);
+            if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D))
+            {
+                Seagullfloat += 0.3f;
+            }
+            else
+            {
+                Seagullfloat = Seagullfloat - Time.deltaTime * 100;
+            }
+
+            transform.position = TheClousestSeagull.transform.position;
+            if (MaxSeagullfloat <= Seagullfloat)
+            {
+                StackInSeagull = false;
+                StackIn = false;
+                rb.velocity = Vector2.up * -15;
+                Seagullfloat = 0;
+            }
+            if (MinSeagullfloat >= Seagullfloat)
+            {
+                Seagullfloat = MinSeagullfloat;
+            }
+
+        }
+
+
+
+
+        FindClousestCrab();
+        FindClousestSeagull();
         if (staminaWork == true && staminaMin < stamina && YeldWork == false)
         { 
             stamina = stamina - Time.deltaTime * staminaSpeed;
@@ -122,7 +229,7 @@ public class CharacterMovement : MonoBehaviour
         }
         if (staminaMin > stamina)
         {
-            stamina = staminaMin;
+            GameOver();
         }
         if (YeldWork == false)
         {
@@ -135,11 +242,11 @@ public class CharacterMovement : MonoBehaviour
 
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, whatIsGround);
 
-        if (isGrounded == true && Input.GetKeyDown(KeyCode.Space))
+        if (isGrounded == true && Input.GetKeyDown(KeyCode.Space) && StackInCrab == false && YeldWork == false && GameOverBool == false)
         {         
             isJumping = true;
             jumpTimeCounter = jumpTime;
-            rb.velocity = Vector2.up * jumpForce;
+            rb.velocity = Vector2.up * jumpForce * GumForce;
 
         }
 
@@ -152,7 +259,7 @@ public class CharacterMovement : MonoBehaviour
         //Tail_Animator.SetBool("IsMoving", true);
 
 
-        if (Input.GetKey(KeyCode.Space) && isJumping == true && YeldWork == false)
+        if (Input.GetKey(KeyCode.Space) && isJumping == true && YeldWork == false && StackIn == false && GameOverBool == false)
         {
             //Char_Animator.SetTrigger("Jump");
             if (jumpTimeCounter > 0)
@@ -164,14 +271,14 @@ public class CharacterMovement : MonoBehaviour
         }
 
 
-        if (Input.GetKeyUp(KeyCode.Space) && YeldWork == false)
+        if (Input.GetKeyUp(KeyCode.Space) && YeldWork == false && StackIn == false)
         {
             isJumping = false;
         }
 
 
 
-        if (Input.GetKeyDown("escape"))
+        if (Input.GetKeyDown("escape") && GameOverBool == false)
         {
             if (IsGameStopped == false)
             {
@@ -187,7 +294,7 @@ public class CharacterMovement : MonoBehaviour
             }
         }
     }
-
+    //Врезался в машину
     private IEnumerator CrashWithCar()
     {
         YeldWork = true;
@@ -210,11 +317,60 @@ public class CharacterMovement : MonoBehaviour
         yield return new WaitForSeconds(1.5f);
         YeldWork = false;
     }
+
+    //Найти Ближайшего Краба
+    GameObject FindClousestCrab()
+    {
+        float distance = Mathf.Infinity;
+        foreach (GameObject go in Crabs)
+        { 
+            Vector2 diff = go.transform.position - transform.position;
+            float curDistance = diff.sqrMagnitude;
+            if (curDistance < distance)
+            { 
+                TheClousestCrab = go;
+                distance = curDistance;
+            }
+        }
+        return TheClousestCrab;
+    }
+    //Найти Ближайшеую чайку
+    GameObject FindClousestSeagull()
+    {
+        float distance = Mathf.Infinity;
+        foreach (GameObject go in Seagulls)
+        {
+            Vector2 diff = go.transform.position - transform.position;
+            float curDistance = diff.sqrMagnitude;
+            if (curDistance < distance)
+            {
+                TheClousestSeagull = go;
+                distance = curDistance;
+            }
+        }
+        return TheClousestSeagull;
+    }
+    //Конец
+    public void GameOver()
+    {
+        if (SendedGhsot == false)
+        {
+            SendedGhsot = true;
+            Instantiate(Ghost, new Vector3(transform.position.x + 0.5f, transform.position.y - 0.5f, 0f), Quaternion.Euler(0f, 0f, 0f));
+        }
+        YeldWork = true;
+        GameOverBool = true;
+        GameOverPanel.SetActive(true);
+    }
+    //Конпки Меню
     public void ExitClick()
     {
         SceneManager.LoadScene("MainMenu");
     }
-
+    public void AgainClick()
+    {
+        SceneManager.LoadScene("SampleScene");
+    }
     public void PlayClick()
     {
         StopPanel.SetActive(false);
