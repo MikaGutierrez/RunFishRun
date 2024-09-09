@@ -23,9 +23,21 @@ public class Seagull : Animation
             {
                 TargetMain = Target2;
             }
-            if (countH >= 1)
+            if (countH >= 1 && GotAPlayer == true)
             {
                 //Destroy(Self);
+            }
+            if (countH >= 1 && GotAPlayer == false)
+            {
+                Destroy(Self);
+            }
+        }
+        if (collision.tag == "SeagullTargete2")
+        {
+
+            if (countH >= 1 && GotAPlayer == false)
+            {
+                Destroy(Self);
             }
         }
 

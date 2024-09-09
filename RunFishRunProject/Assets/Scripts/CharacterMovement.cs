@@ -91,6 +91,16 @@ public class CharacterMovement : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if (collision.tag == "SeagullTargete2")
+        {
+            GameOver();
+
+        }
+        if (collision.tag == "Baby")
+        {
+            GameOver();
+
+        }
         if (collision.tag == "Puddle")
         {
             Instantiate(SplashEffect, new Vector3(transform.position.x, transform.position.y - 0.34f, 0f), Quaternion.Euler(0f, 0f, 0f));
@@ -163,7 +173,7 @@ public class CharacterMovement : MonoBehaviour
         if (StackInCrab == true)
         {
             transform.eulerAngles = new Vector3(0, 0, 0);
-            if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D))
+            if ((Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D)) && YeldWork == false)
             {
                 Crabfloat += 0.1f;
             }
@@ -190,7 +200,7 @@ public class CharacterMovement : MonoBehaviour
         if (StackInSeagull == true)
         {
             transform.eulerAngles = new Vector3(0, 0,-29.274f);
-            if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D))
+            if ((Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D)) && YeldWork == false)
             {
                 Seagullfloat += 0.3f;
             }

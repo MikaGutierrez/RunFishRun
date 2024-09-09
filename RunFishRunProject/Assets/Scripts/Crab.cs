@@ -14,6 +14,7 @@ public class Crab : Animation
     private bool YeldWork = false;
     public BoxCollider2D CrabCollider;
     public GameObject Claws;
+    private bool CanEscape = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,8 +24,9 @@ public class Crab : Animation
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "ChillCrabZone" && OnChillZone == false && Claws.GetComponent<CrabClaws>().HaveAFish == false && YeldWork == false)
+        if (collision.tag == "ChillCrabZone" && OnChillZone == false && Claws.GetComponent<CrabClaws>().HaveAFish == false && YeldWork == false && CanEscape == true)
         {
+            CanEscape = false;
             Escape = Random.Range(0, 2);
             OnChillZone = true;
             if (Escape == 1)
@@ -107,7 +109,7 @@ public class Crab : Animation
         ChangeAnimationState(animationNames[4]);
         yield return new WaitForSeconds(Random.Range(1, 5));
         ChangeAnimationState(animationNames[1]);
-        yield return new WaitForSeconds(0.6f);
+        yield return new WaitForSeconds(0.7f);
         ChangeAnimationState(animationNames[4]);
         yield return new WaitForSeconds(Random.Range(1, 5));
         ChangeAnimationState(animationNames[3]);
@@ -115,6 +117,8 @@ public class Crab : Animation
         YeldWork = false;
         speedWork = 1;
         CrabCollider.enabled = true;
+        yield return new WaitForSeconds(2f);
+        CanEscape = true;
     }
 
     public void ChooseRandomDeareection()
