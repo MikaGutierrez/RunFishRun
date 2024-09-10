@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Trampoline : MonoBehaviour
+public class Trampoline :Animation
 {
     public Rigidbody2D rb;
     public float TrampolineForce;
@@ -11,6 +11,7 @@ public class Trampoline : MonoBehaviour
         if (collision.tag == "Player")
         {
             rb.velocity = Vector2.up * TrampolineForce;
+            PlaySounds(audioClips[0], p1: 1f, p2: 1.4f);
         }
     }
     // Start is called before the first frame update

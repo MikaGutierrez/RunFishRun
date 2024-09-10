@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class CharacterMovement : MonoBehaviour
+public class CharacterMovement : Animation
 {
     //Color for Fish
     public SpriteRenderer HeadRenderer;
@@ -82,11 +82,20 @@ public class CharacterMovement : MonoBehaviour
     private float MinSeagullfloat = 0;
     public float Seagullfloat = 0;
 
+    //Для звуков
+    private bool FirstTimeOnGround;
+    private bool FirstTimeOnPuddle;
+
     private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.tag == "Puddle")
         {
+            FirstTimeOnPuddle = true;
             stamina = stamina + Time.deltaTime * staminaSpeed * 3;
+        }
+        else
+        {
+            FirstTimeOnPuddle = false;
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)
@@ -170,6 +179,25 @@ public class CharacterMovement : MonoBehaviour
 
     void Update()
     {
+        //Звуки
+        if (isGrounded == true && FirstTimeOnGround == false)
+        {
+            FirstTimeOnGround = true;
+            if (FirstTimeOnPuddle == false)
+            {
+                PlaySounds(audioClips[Random.Range(0, 5)], p1: 0.8f, p2: 1.1f);
+            }
+            else
+            {
+                PlaySounds(audioClips[Random.Range(5, 7)], p1: 0.8f, p2: 1.1f);
+            }
+        }
+
+        if (isGrounded == false && FirstTimeOnGround == true)
+        {
+            FirstTimeOnGround = false;
+        }
+        //Застрял в крабе
         if (StackInCrab == true)
         {
             transform.eulerAngles = new Vector3(0, 0, 0);
@@ -196,7 +224,7 @@ public class CharacterMovement : MonoBehaviour
             }
 
         }
-
+        //Застрял в чайке
         if (StackInSeagull == true)
         {
             transform.eulerAngles = new Vector3(0, 0,-29.274f);

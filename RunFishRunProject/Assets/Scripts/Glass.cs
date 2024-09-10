@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Glass : MonoBehaviour
+public class Glass : Animation
 {
     public GameObject Self;
     public GameObject Pieces;
@@ -30,6 +30,7 @@ public class Glass : MonoBehaviour
         Destroyed = true;
         Time.timeScale = 0.25f;
         Instantiate(Pieces, new Vector3(transform.position.x, transform.position.y, 0f), Quaternion.Euler(0f, 0f, 0f));
+        PlaySounds(audioClips[0], p1: 1f, p2: 1f);
         yield return new WaitForSeconds(0.005f);
         Destroy(Self);
         yield return new WaitForSeconds(0.15f);

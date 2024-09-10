@@ -17,6 +17,7 @@ TagManager:
   - SeagullTP
   - SeagullTargete2
   - Baby
+  - Fruit
   layers:
   - Default
   - TransparentFX
