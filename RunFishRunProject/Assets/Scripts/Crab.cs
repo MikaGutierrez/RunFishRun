@@ -20,6 +20,7 @@ public class Crab : Animation
     {
         rb = GetComponent<Rigidbody2D>();
         ChooseRandomDeareection();
+        StartCoroutine(SoundsOfWallk());
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -48,6 +49,7 @@ public class Crab : Animation
     // Update is called once per frame
     void Update()
     {
+
         if (YeldWork == false && Claws.GetComponent<CrabClaws>().HaveAFish == false)
         {
             ChangeAnimationState(animationNames[0]);
@@ -57,6 +59,16 @@ public class Crab : Animation
             ChangeAnimationState(animationNames[5]);
         }
         rb.velocity = new Vector2(moveInput * speed * speedWork, rb.velocity.y);
+    }
+
+    private IEnumerator SoundsOfWallk()
+    {
+        if (YeldWork == false)
+        {
+            PlaySounds(audioClips[Random.Range(0, 2)], p1: 1.2f, p2: 3f);
+        }
+        yield return new WaitForSeconds(0.23f);
+        StartCoroutine(SoundsOfWallk());
     }
     private IEnumerator Run1()
     {
