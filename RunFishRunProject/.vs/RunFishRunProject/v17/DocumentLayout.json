@@ -3,16 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\Miguel\\Documents\\GitHub\\RunFishRun\\RunFishRunProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{91F82ADD-F08A-2A99-9218-13D72DE6B620}|Assembly-CSharp.csproj|C:\\Users\\Miguel\\Documents\\GitHub\\RunFishRun\\RunFishRunProject\\assets\\scripts\\crab.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{91F82ADD-F08A-2A99-9218-13D72DE6B620}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\crab.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{91F82ADD-F08A-2A99-9218-13D72DE6B620}|Assembly-CSharp.csproj|c:\\users\\miguel\\documents\\github\\runfishrun\\runfishrunproject\\assets\\scripts\\boxwithfruits.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91F82ADD-F08A-2A99-9218-13D72DE6B620}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\boxwithfruits.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91F82ADD-F08A-2A99-9218-13D72DE6B620}|Assembly-CSharp.csproj|c:\\users\\miguel\\documents\\github\\runfishrun\\runfishrunproject\\assets\\scripts\\dissapeartuchcollider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91F82ADD-F08A-2A99-9218-13D72DE6B620}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\dissapeartuchcollider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91F82ADD-F08A-2A99-9218-13D72DE6B620}|Assembly-CSharp.csproj|c:\\users\\miguel\\documents\\github\\runfishrun\\runfishrunproject\\assets\\scripts\\charactermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91F82ADD-F08A-2A99-9218-13D72DE6B620}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\charactermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91F82ADD-F08A-2A99-9218-13D72DE6B620}|Assembly-CSharp.csproj|C:\\Users\\Miguel\\Documents\\GitHub\\RunFishRun\\RunFishRunProject\\assets\\scripts\\carcode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91F82ADD-F08A-2A99-9218-13D72DE6B620}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\carcode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91F82ADD-F08A-2A99-9218-13D72DE6B620}|Assembly-CSharp.csproj|C:\\Users\\Miguel\\Documents\\GitHub\\RunFishRun\\RunFishRunProject\\assets\\scripts\\puddle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91F82ADD-F08A-2A99-9218-13D72DE6B620}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\puddle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91F82ADD-F08A-2A99-9218-13D72DE6B620}|Assembly-CSharp.csproj|C:\\Users\\Miguel\\Documents\\GitHub\\RunFishRun\\RunFishRunProject\\assets\\scripts\\effectcode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91F82ADD-F08A-2A99-9218-13D72DE6B620}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\effectcode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{91F82ADD-F08A-2A99-9218-13D72DE6B620}|Assembly-CSharp.csproj|C:\\Users\\Miguel\\Documents\\GitHub\\RunFishRun\\RunFishRunProject\\assets\\scripts\\trampoline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{91F82ADD-F08A-2A99-9218-13D72DE6B620}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\trampoline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{91F82ADD-F08A-2A99-9218-13D72DE6B620}|Assembly-CSharp.csproj|C:\\Users\\Miguel\\Documents\\GitHub\\RunFishRun\\RunFishRunProject\\assets\\scripts\\charactermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{91F82ADD-F08A-2A99-9218-13D72DE6B620}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\charactermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{91F82ADD-F08A-2A99-9218-13D72DE6B620}|Assembly-CSharp.csproj|C:\\Users\\Miguel\\Documents\\GitHub\\RunFishRun\\RunFishRunProject\\assets\\scripts\\crab.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91F82ADD-F08A-2A99-9218-13D72DE6B620}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\crab.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{91F82ADD-F08A-2A99-9218-13D72DE6B620}|Assembly-CSharp.csproj|C:\\Users\\Miguel\\Documents\\GitHub\\RunFishRun\\RunFishRunProject\\assets\\scripts\\baby.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -26,19 +46,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Trampoline.cs",
-              "DocumentMoniker": "C:\\Users\\Miguel\\Documents\\GitHub\\RunFishRun\\RunFishRunProject\\Assets\\Scripts\\Trampoline.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Trampoline.cs",
-              "ToolTip": "C:\\Users\\Miguel\\Documents\\GitHub\\RunFishRun\\RunFishRunProject\\Assets\\Scripts\\Trampoline.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Trampoline.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAA3AAAA",
+              "DocumentIndex": 0,
+              "Title": "BoxWithFruits.cs",
+              "DocumentMoniker": "C:\\Users\\Miguel\\Documents\\GitHub\\RunFishRun\\RunFishRunProject\\Assets\\Scripts\\BoxWithFruits.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\BoxWithFruits.cs",
+              "ToolTip": "C:\\Users\\Miguel\\Documents\\GitHub\\RunFishRun\\RunFishRunProject\\Assets\\Scripts\\BoxWithFruits.cs",
+              "RelativeToolTip": "Assets\\Scripts\\BoxWithFruits.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-10T20:44:05.206Z",
+              "WhenOpened": "2024-09-11T23:18:39.254Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DissapearTuchCollider.cs",
+              "DocumentMoniker": "C:\\Users\\Miguel\\Documents\\GitHub\\RunFishRun\\RunFishRunProject\\Assets\\Scripts\\DissapearTuchCollider.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\DissapearTuchCollider.cs",
+              "ToolTip": "C:\\Users\\Miguel\\Documents\\GitHub\\RunFishRun\\RunFishRunProject\\Assets\\Scripts\\DissapearTuchCollider.cs",
+              "RelativeToolTip": "Assets\\Scripts\\DissapearTuchCollider.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAUwCQAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T19:48:09.781Z",
               "EditorCaption": ""
             },
             {
@@ -49,14 +82,65 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\CharacterMovement.cs",
               "ToolTip": "C:\\Users\\Miguel\\Documents\\GitHub\\RunFishRun\\RunFishRunProject\\Assets\\Scripts\\CharacterMovement.cs",
               "RelativeToolTip": "Assets\\Scripts\\CharacterMovement.cs",
-              "ViewState": "AQIAAGsBAAAAAAAAAAAmwHoBAAArAAAA",
+              "ViewState": "AQIAAD0BAAAAAAAAAAAqwFYBAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-09T18:35:06.847Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
+              "Title": "CarCode.cs",
+              "DocumentMoniker": "C:\\Users\\Miguel\\Documents\\GitHub\\RunFishRun\\RunFishRunProject\\Assets\\Scripts\\CarCode.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\CarCode.cs",
+              "ToolTip": "C:\\Users\\Miguel\\Documents\\GitHub\\RunFishRun\\RunFishRunProject\\Assets\\Scripts\\CarCode.cs",
+              "RelativeToolTip": "Assets\\Scripts\\CarCode.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T19:10:25.869Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EffectCode.cs",
+              "DocumentMoniker": "C:\\Users\\Miguel\\Documents\\GitHub\\RunFishRun\\RunFishRunProject\\Assets\\Scripts\\EffectCode.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\EffectCode.cs",
+              "ToolTip": "C:\\Users\\Miguel\\Documents\\GitHub\\RunFishRun\\RunFishRunProject\\Assets\\Scripts\\EffectCode.cs",
+              "RelativeToolTip": "Assets\\Scripts\\EffectCode.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T18:40:53.085Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Puddle.cs",
+              "DocumentMoniker": "C:\\Users\\Miguel\\Documents\\GitHub\\RunFishRun\\RunFishRunProject\\Assets\\Scripts\\Puddle.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Puddle.cs",
+              "ToolTip": "C:\\Users\\Miguel\\Documents\\GitHub\\RunFishRun\\RunFishRunProject\\Assets\\Scripts\\Puddle.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Puddle.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T17:50:12.149Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Trampoline.cs",
+              "DocumentMoniker": "C:\\Users\\Miguel\\Documents\\GitHub\\RunFishRun\\RunFishRunProject\\Assets\\Scripts\\Trampoline.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Trampoline.cs",
+              "ToolTip": "C:\\Users\\Miguel\\Documents\\GitHub\\RunFishRun\\RunFishRunProject\\Assets\\Scripts\\Trampoline.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Trampoline.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T20:44:05.206Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "Crab.cs",
               "DocumentMoniker": "C:\\Users\\Miguel\\Documents\\GitHub\\RunFishRun\\RunFishRunProject\\Assets\\Scripts\\Crab.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Crab.cs",
@@ -64,12 +148,11 @@
               "RelativeToolTip": "Assets\\Scripts\\Crab.cs",
               "ViewState": "AQIAADUAAAAAAAAAAADwv0wAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-09T17:54:44.535Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-09T17:54:44.535Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "Baby.cs",
               "DocumentMoniker": "C:\\Users\\Miguel\\Documents\\GitHub\\RunFishRun\\RunFishRunProject\\Assets\\Scripts\\Baby.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Baby.cs",
@@ -77,8 +160,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Baby.cs",
               "ViewState": "AQIAABsAAAAAAAAAAAAYwCYAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-09T22:07:15.659Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-09T22:07:15.659Z"
             }
           ]
         }

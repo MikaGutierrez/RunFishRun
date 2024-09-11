@@ -48,8 +48,8 @@ MonoBehaviour:
   TimerAfterStartGame: 12
   TimerUntilRespawn: 5
   Track: {fileID: 8157807090258782896, guid: 190fbadd02e9ad64fa72e06b6fe64cd8, type: 3}
-  Track2: {fileID: 7903995419964395624, guid: d437e00b44222be40886175107245768, type: 3}
-  Track3: {fileID: 4636373425215913681, guid: 78bdd399357d4554b8eb594b2216773d, type: 3}
+  Track2: {fileID: 6957515862828775474, guid: 82d9a3aa5fbb06b46a55a292d0fa3220, type: 3}
+  Track3: {fileID: 8956556393925319802, guid: 847e8843959ba8543b9e906ee56a9f6b, type: 3}
 --- !u!1 &4331240438581793282
 GameObject:
   m_ObjectHideFlags: 0
