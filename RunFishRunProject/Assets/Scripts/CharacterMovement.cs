@@ -342,10 +342,14 @@ public class CharacterMovement : Animation
         BodyRenderer.color = ColorInvisible;
         TailRenderer.color = ColorInvisible;
         yield return new WaitForSeconds(3.1f);
+        transform.eulerAngles = new Vector3(0, 0, -141.25f);
+        yield return new WaitForSeconds(0.0001f);
+        rb.velocity = Vector2.right * 20 + Vector2.up * -10;
         transform.position = RespawnCarPlace.transform.position;
         HeadRenderer.color = ColorNow;
         BodyRenderer.color = ColorNow;
         TailRenderer.color = ColorNow;
+        yield return new WaitForSeconds(1f);
         YeldWork = false;
     }
     private IEnumerator GetALeg()

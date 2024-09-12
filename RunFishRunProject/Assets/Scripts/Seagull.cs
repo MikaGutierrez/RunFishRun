@@ -29,7 +29,7 @@ public class Seagull : Animation
             }
             if (countH >= 1 && GotAPlayer == false)
             {
-                Destroy(Self);
+                //Destroy(Self);
             }
         }
         if (collision.tag == "SeagullTargete2")
@@ -37,7 +37,7 @@ public class Seagull : Animation
 
             if (countH >= 1 && GotAPlayer == false)
             {
-                Destroy(Self);
+                //Destroy(Self);
             }
         }
 
@@ -57,6 +57,7 @@ public class Seagull : Animation
     {
         if (collision.tag == "SeagullTarget")
         {
+            PlaySounds(audioClips[1]);
             countH += 1;
         }
         if (collision.tag == "Player")
@@ -68,6 +69,7 @@ public class Seagull : Animation
     // Start is called before the first frame update
     void Start()
     {
+        PlaySounds(audioClips[Random.Range(2, 4)]);
         rb = GetComponent<Rigidbody2D>();
         TargetMain = SelfS;
         StartCoroutine(WaitStart());
@@ -134,5 +136,6 @@ public class Seagull : Animation
     {
         yield return new WaitForSeconds(1f);
         TargetMain = Target1;
+        PlaySounds(audioClips[0]);
     }
 }

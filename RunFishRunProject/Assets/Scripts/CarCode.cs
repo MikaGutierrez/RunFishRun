@@ -1,9 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using static Cinemachine.DocumentationSortingAttribute;
 
-public class CarCode : MonoBehaviour
+public class CarCode : Animation
 {
     public float lifeTime = 50;
     public GameObject Self;
@@ -12,6 +13,7 @@ public class CarCode : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        StartCoroutine(JustRun());
         sr.sprite = CarSprites[Random.Range(0, CarSprites.Length)];
     }
 
@@ -22,6 +24,16 @@ public class CarCode : MonoBehaviour
         if (lifeTime <= 0)
         {
             Destroy(Self);
+        }
+    }
+
+
+    private IEnumerator JustRun()
+    {
+        yield return new WaitForSeconds(0.3f);
+        if (audioClips.Length > 0)
+        {
+            PlaySounds(audioClips[Random.Range(0, audioClips.Length)]);
         }
     }
 }

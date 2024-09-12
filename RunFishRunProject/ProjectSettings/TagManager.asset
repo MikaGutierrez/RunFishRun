@@ -18,6 +18,8 @@ TagManager:
   - SeagullTargete2
   - Baby
   - Fruit
+  - CrabCollidere
+  - CrabCollidere2
   layers:
   - Default
   - TransparentFX
@@ -28,7 +30,7 @@ TagManager:
   - Ground
   - Player
   - CrabChillZone
-  - 
+  - Crab
   - 
   - 
   - 

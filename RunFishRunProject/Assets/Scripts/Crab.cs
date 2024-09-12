@@ -28,12 +28,20 @@ public class Crab : Animation
         if (collision.tag == "ChillCrabZone" && OnChillZone == false && Claws.GetComponent<CrabClaws>().HaveAFish == false && YeldWork == false && CanEscape == true)
         {
             CanEscape = false;
-            Escape = Random.Range(0, 2);
+            Escape = Random.Range(0, 4);
             OnChillZone = true;
-            if (Escape == 1)
+            if (Escape >= 2)
             {
                 StartCoroutine(Hide());
             }
+        }
+        if (collision.tag == "CrabCollidere")
+        {
+            StartCoroutine(RunAfterCollider1());
+        }
+        if (collision.tag == "CrabCollidere2")
+        {
+            StartCoroutine(RunAfterCollider2());
         }
 
     }
@@ -129,7 +137,7 @@ public class Crab : Animation
         YeldWork = false;
         speedWork = 1;
         CrabCollider.enabled = true;
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(1f);
         CanEscape = true;
     }
 
@@ -152,6 +160,25 @@ public class Crab : Animation
         {
             StartCoroutine(Run4());
         }
+    }
+
+    private IEnumerator RunAfterCollider1()
+    {
+        moveInput = -5;
+        yield return new WaitForSeconds(2f);
+        moveInput = -2.5f;
+        yield return new WaitForSeconds(0.5f);
+        moveInput = 0f;
+        yield return new WaitForSeconds(0.05f);
+    }
+    private IEnumerator RunAfterCollider2()
+    {
+        moveInput = 5;
+        yield return new WaitForSeconds(2f);
+        moveInput = 2.5f;
+        yield return new WaitForSeconds(0.5f);
+        moveInput = 0f;
+        yield return new WaitForSeconds(0.05f);
     }
 
 }

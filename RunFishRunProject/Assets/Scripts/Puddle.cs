@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Puddle : MonoBehaviour
-{    
+{
+    public bool StopIt = false;
     public float lifeTime = 50;
     public float speed;
     public Sprite Level1;
@@ -18,7 +19,7 @@ public class Puddle : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.tag == "Player")
+        if (collision.tag == "Player" && StopIt == false)
         {
             lifeTime = lifeTime - Time.deltaTime * 12 * speed;
         }
