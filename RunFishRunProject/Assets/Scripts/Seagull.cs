@@ -14,11 +14,13 @@ public class Seagull : Animation
     private bool GotAPlayer;
     private bool YeldWork = false;
     private Rigidbody2D rb;
+    private float speed2 = 1f;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "SeagullTarget")
         {
+            speed2 = 0.65f;
             if (countH == 0)
             {
                 TargetMain = Target2;
@@ -109,7 +111,7 @@ public class Seagull : Animation
         }
         if (YeldWork == false)
         {
-            transform.position = Vector2.Lerp(transform.position, TargetMain.transform.position, Time.deltaTime * speed);
+            transform.position = Vector2.Lerp(transform.position, TargetMain.transform.position, Time.deltaTime * speed * speed2);
         }
         else
         {

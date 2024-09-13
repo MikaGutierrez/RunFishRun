@@ -3,24 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Miguel\\Documents\\GitHub\\RunFishRun\\RunFishRunProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{91F82ADD-F08A-2A99-9218-13D72DE6B620}|Assembly-CSharp.csproj|c:\\users\\miguel\\documents\\github\\runfishrun\\runfishrunproject\\assets\\scripts\\seagull.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{91F82ADD-F08A-2A99-9218-13D72DE6B620}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\seagull.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{91F82ADD-F08A-2A99-9218-13D72DE6B620}|Assembly-CSharp.csproj|c:\\users\\miguel\\documents\\github\\runfishrun\\runfishrunproject\\assets\\scripts\\carcode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{91F82ADD-F08A-2A99-9218-13D72DE6B620}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\carcode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{91F82ADD-F08A-2A99-9218-13D72DE6B620}|Assembly-CSharp.csproj|C:\\Users\\Miguel\\Documents\\GitHub\\RunFishRun\\RunFishRunProject\\assets\\scripts\\charactermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{91F82ADD-F08A-2A99-9218-13D72DE6B620}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\charactermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{91F82ADD-F08A-2A99-9218-13D72DE6B620}|Assembly-CSharp.csproj|c:\\users\\miguel\\documents\\github\\runfishrun\\runfishrunproject\\assets\\scripts\\puddle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{91F82ADD-F08A-2A99-9218-13D72DE6B620}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\puddle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{91F82ADD-F08A-2A99-9218-13D72DE6B620}|Assembly-CSharp.csproj|c:\\users\\miguel\\documents\\github\\runfishrun\\runfishrunproject\\assets\\scripts\\collectables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91F82ADD-F08A-2A99-9218-13D72DE6B620}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\collectables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{91F82ADD-F08A-2A99-9218-13D72DE6B620}|Assembly-CSharp.csproj|c:\\users\\miguel\\documents\\github\\runfishrun\\runfishrunproject\\assets\\scripts\\crab.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{91F82ADD-F08A-2A99-9218-13D72DE6B620}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\crab.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{91F82ADD-F08A-2A99-9218-13D72DE6B620}|Assembly-CSharp.csproj|C:\\Users\\Miguel\\Documents\\GitHub\\RunFishRun\\RunFishRunProject\\assets\\scripts\\destroybox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91F82ADD-F08A-2A99-9218-13D72DE6B620}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\destroybox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91F82ADD-F08A-2A99-9218-13D72DE6B620}|Assembly-CSharp.csproj|c:\\users\\miguel\\documents\\github\\runfishrun\\runfishrunproject\\assets\\scripts\\baby.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91F82ADD-F08A-2A99-9218-13D72DE6B620}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\baby.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91F82ADD-F08A-2A99-9218-13D72DE6B620}|Assembly-CSharp.csproj|c:\\users\\miguel\\documents\\github\\runfishrun\\runfishrunproject\\assets\\scripts\\animation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91F82ADD-F08A-2A99-9218-13D72DE6B620}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\animation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91F82ADD-F08A-2A99-9218-13D72DE6B620}|Assembly-CSharp.csproj|c:\\users\\miguel\\documents\\github\\runfishrun\\runfishrunproject\\assets\\scripts\\glass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91F82ADD-F08A-2A99-9218-13D72DE6B620}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\glass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{91F82ADD-F08A-2A99-9218-13D72DE6B620}|Assembly-CSharp.csproj|C:\\Users\\Miguel\\Documents\\GitHub\\RunFishRun\\RunFishRunProject\\assets\\scripts\\trampoline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -34,76 +38,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Seagull.cs",
-              "DocumentMoniker": "C:\\Users\\Miguel\\Documents\\GitHub\\RunFishRun\\RunFishRunProject\\Assets\\Scripts\\Seagull.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Seagull.cs",
-              "ToolTip": "C:\\Users\\Miguel\\Documents\\GitHub\\RunFishRun\\RunFishRunProject\\Assets\\Scripts\\Seagull.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Seagull.cs",
-              "ViewState": "AQIAADEAAAAAAAAAAAAQwEcAAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-12T22:38:42.601Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CarCode.cs",
-              "DocumentMoniker": "C:\\Users\\Miguel\\Documents\\GitHub\\RunFishRun\\RunFishRunProject\\Assets\\Scripts\\CarCode.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\CarCode.cs",
-              "ToolTip": "C:\\Users\\Miguel\\Documents\\GitHub\\RunFishRun\\RunFishRunProject\\Assets\\Scripts\\CarCode.cs",
-              "RelativeToolTip": "Assets\\Scripts\\CarCode.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAQwCIAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-12T22:03:46.678Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Puddle.cs",
-              "DocumentMoniker": "C:\\Users\\Miguel\\Documents\\GitHub\\RunFishRun\\RunFishRunProject\\Assets\\Scripts\\Puddle.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Puddle.cs",
-              "ToolTip": "C:\\Users\\Miguel\\Documents\\GitHub\\RunFishRun\\RunFishRunProject\\Assets\\Scripts\\Puddle.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Puddle.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABEAAAAeAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-12T21:12:13.317Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Crab.cs",
-              "DocumentMoniker": "C:\\Users\\Miguel\\Documents\\GitHub\\RunFishRun\\RunFishRunProject\\Assets\\Scripts\\Crab.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Crab.cs",
-              "ToolTip": "C:\\Users\\Miguel\\Documents\\GitHub\\RunFishRun\\RunFishRunProject\\Assets\\Scripts\\Crab.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Crab.cs",
-              "ViewState": "AQIAAG8AAAAAAAAAAAAIwH8AAAAuAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-12T20:28:15.461Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CharacterMovement.cs",
-              "DocumentMoniker": "C:\\Users\\Miguel\\Documents\\GitHub\\RunFishRun\\RunFishRunProject\\Assets\\Scripts\\CharacterMovement.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\CharacterMovement.cs",
-              "ToolTip": "C:\\Users\\Miguel\\Documents\\GitHub\\RunFishRun\\RunFishRunProject\\Assets\\Scripts\\CharacterMovement.cs",
-              "RelativeToolTip": "Assets\\Scripts\\CharacterMovement.cs",
-              "ViewState": "AQIAAK0AAAAAAAAAAAAIwL4AAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-09T18:35:06.847Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Trampoline.cs",
               "DocumentMoniker": "C:\\Users\\Miguel\\Documents\\GitHub\\RunFishRun\\RunFishRunProject\\Assets\\Scripts\\Trampoline.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Trampoline.cs",
@@ -111,7 +50,88 @@
               "RelativeToolTip": "Assets\\Scripts\\Trampoline.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAA3AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-10T20:44:05.206Z"
+              "WhenOpened": "2024-09-10T20:44:05.206Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Glass.cs",
+              "DocumentMoniker": "C:\\Users\\Miguel\\Documents\\GitHub\\RunFishRun\\RunFishRunProject\\Assets\\Scripts\\Glass.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Glass.cs",
+              "ToolTip": "C:\\Users\\Miguel\\Documents\\GitHub\\RunFishRun\\RunFishRunProject\\Assets\\Scripts\\Glass.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Glass.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAYwB4AAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T15:34:44.402Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Baby.cs",
+              "DocumentMoniker": "C:\\Users\\Miguel\\Documents\\GitHub\\RunFishRun\\RunFishRunProject\\Assets\\Scripts\\Baby.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Baby.cs",
+              "ToolTip": "C:\\Users\\Miguel\\Documents\\GitHub\\RunFishRun\\RunFishRunProject\\Assets\\Scripts\\Baby.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Baby.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAABKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T18:27:30.442Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Animation.cs",
+              "DocumentMoniker": "C:\\Users\\Miguel\\Documents\\GitHub\\RunFishRun\\RunFishRunProject\\Assets\\Scripts\\Animation.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Animation.cs",
+              "ToolTip": "C:\\Users\\Miguel\\Documents\\GitHub\\RunFishRun\\RunFishRunProject\\Assets\\Scripts\\Animation.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Animation.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T17:44:42.796Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Collectables.cs",
+              "DocumentMoniker": "C:\\Users\\Miguel\\Documents\\GitHub\\RunFishRun\\RunFishRunProject\\Assets\\Scripts\\Collectables.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Collectables.cs",
+              "ToolTip": "C:\\Users\\Miguel\\Documents\\GitHub\\RunFishRun\\RunFishRunProject\\Assets\\Scripts\\Collectables.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Collectables.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAABLAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T17:28:17.862Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DestroyBox.cs",
+              "DocumentMoniker": "C:\\Users\\Miguel\\Documents\\GitHub\\RunFishRun\\RunFishRunProject\\Assets\\Scripts\\DestroyBox.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\DestroyBox.cs",
+              "ToolTip": "C:\\Users\\Miguel\\Documents\\GitHub\\RunFishRun\\RunFishRunProject\\Assets\\Scripts\\DestroyBox.cs",
+              "RelativeToolTip": "Assets\\Scripts\\DestroyBox.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAqwB8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T15:33:45.797Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CharacterMovement.cs",
+              "DocumentMoniker": "C:\\Users\\Miguel\\Documents\\GitHub\\RunFishRun\\RunFishRunProject\\Assets\\Scripts\\CharacterMovement.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\CharacterMovement.cs",
+              "ToolTip": "C:\\Users\\Miguel\\Documents\\GitHub\\RunFishRun\\RunFishRunProject\\Assets\\Scripts\\CharacterMovement.cs",
+              "RelativeToolTip": "Assets\\Scripts\\CharacterMovement.cs",
+              "ViewState": "AQIAAGwAAAAAAAAAAAAqwHYAAACIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T18:35:06.847Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -613,6 +613,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46454cc90d285544d82714fac974cba7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animationNew: {fileID: 6307151785448907211}
+  animationNames:
+  - Running
+  - BabyFall
+  - BabyFallPst
+  audioSr: {fileID: 0}
+  audioClips: []
   speed: 4
   Acceleration: 0.15
 --- !u!1 &4220572700648849471

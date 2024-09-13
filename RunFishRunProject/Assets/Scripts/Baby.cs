@@ -32,4 +32,5 @@ public class Baby : Animation
         Instantiate(BabyNew, new Vector3(transform.position.x, transform.position.y, 0f), Quaternion.Euler(0f, 0f, 0f));
         Destroy(Self);
     }
+
 }

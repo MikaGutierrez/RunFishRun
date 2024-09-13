@@ -5,6 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class CharacterMovement : Animation
 {
+    //Коллекционные предметы
+    public int CollectblesCount;
+
     //Color for Fish
     public SpriteRenderer HeadRenderer;
     public SpriteRenderer BodyRenderer;
@@ -54,6 +57,7 @@ public class CharacterMovement : Animation
     public GameObject StopPanel;
     public GameObject GameOverPanel;
     public GameObject Ghost;
+    public GameObject TapUI;
     private float GumForce = 1;
 
     //Rigidbody2D
@@ -69,7 +73,7 @@ public class CharacterMovement : Animation
     private GameObject[] Crabs;
     private GameObject TheClousestCrab;
     private bool StackInCrab;
-    private float MaxCrabfloat = 40;
+    private float MaxCrabfloat = 1;
     private float MinCrabfloat = 0;
     public float Crabfloat = 0;
 
@@ -78,7 +82,7 @@ public class CharacterMovement : Animation
     private GameObject[] Seagulls;
     public GameObject TheClousestSeagull;
     private bool StackInSeagull;
-    private float MaxSeagullfloat = 40;
+    private float MaxSeagullfloat = 1;
     private float MinSeagullfloat = 0;
     public float Seagullfloat = 0;
 
@@ -112,7 +116,7 @@ public class CharacterMovement : Animation
         }
         if (collision.tag == "Puddle")
         {
-            Instantiate(SplashEffect, new Vector3(transform.position.x, transform.position.y - 0.34f, 0f), Quaternion.Euler(0f, 0f, 0f));
+            Instantiate(SplashEffect, new Vector3(transform.position.x, transform.position.y, -1f), Quaternion.Euler(-84.15f, 0f, 21.729f));
         }
 
         if (collision.tag == "Car" && YeldWork == false) 
@@ -149,6 +153,7 @@ public class CharacterMovement : Animation
     }
     void Start()
     {
+        TapUI.SetActive(false);
         Crabs = GameObject.FindGameObjectsWithTag("CrabTP");
         StopPanel.SetActive(false);
         GameOverPanel.SetActive(false);
@@ -185,7 +190,7 @@ public class CharacterMovement : Animation
             FirstTimeOnGround = true;
             if (FirstTimeOnPuddle == false)
             {
-                PlaySounds(audioClips[Random.Range(0, 5)], p1: 0.8f, p2: 1.1f);
+                PlaySounds(audioClips[Random.Range(0, 5)],volume:0.5f, p1: 0.8f, p2: 1.1f);
             }
             else
             {
@@ -200,14 +205,16 @@ public class CharacterMovement : Animation
         //Застрял в крабе
         if (StackInCrab == true)
         {
+
+            TapUI.SetActive(true);
             transform.eulerAngles = new Vector3(0, 0, 0);
-            if ((Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D)) && YeldWork == false)
+            if ((Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D)) && YeldWork == false && (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.D)))
             {
-                Crabfloat += 0.1f;
+                Crabfloat += 0.5f;
             }
             else
             {
-                Crabfloat = Crabfloat - Time.deltaTime * 100;
+                Crabfloat = Crabfloat - Time.deltaTime;
             }
 
             transform.position = TheClousestCrab.transform.position;
@@ -224,17 +231,21 @@ public class CharacterMovement : Animation
             }
 
         }
+        else
+        {
+            TapUI.SetActive(false);
+        }
         //Застрял в чайке
         if (StackInSeagull == true)
         {
             transform.eulerAngles = new Vector3(0, 0,-29.274f);
-            if ((Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D)) && YeldWork == false)
+            if ((Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D)) && YeldWork == false && (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.D)))
             {
-                Seagullfloat += 0.3f;
+                Seagullfloat += 0.5f;
             }
             else
             {
-                Seagullfloat = Seagullfloat - Time.deltaTime * 100;
+                Seagullfloat = Seagullfloat - Time.deltaTime;
             }
 
             transform.position = TheClousestSeagull.transform.position;

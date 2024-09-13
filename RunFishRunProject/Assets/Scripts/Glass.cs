@@ -28,12 +28,12 @@ public class Glass : Animation
     private IEnumerator GlassDestroy()
     {
         Destroyed = true;
-        Time.timeScale = 0.25f;
+        //Time.timeScale = 0.25f;
         Instantiate(Pieces, new Vector3(transform.position.x, transform.position.y, 0f), Quaternion.Euler(0f, 0f, 0f));
         PlaySounds(audioClips[0], p1: 1f, p2: 1f);
         yield return new WaitForSeconds(0.005f);
         Destroy(Self);
         yield return new WaitForSeconds(0.15f);
-        Time.timeScale = 1f;
+        //Time.timeScale = 1f;
     }
 }
