@@ -12,7 +12,7 @@ public class Collectables : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
-            Player.GetComponent<CharacterMovement>().CollectblesCount += 1;
+            CharacterMovement.CollectblesCount += 1;
             StartCoroutine(Destroy());
         }
     }

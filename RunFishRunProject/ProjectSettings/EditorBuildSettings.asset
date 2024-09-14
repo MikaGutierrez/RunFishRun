@@ -17,4 +17,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GoodEnding.unity
     guid: dd23e9cf1f04fab48bdf21a01b0a1657
+  - enabled: 1
+    path: Assets/Scenes/DeadByBaby.unity
+    guid: 4af377a3435d24b439883cbc7d505817
+  - enabled: 1
+    path: Assets/Scenes/DeadBySeagull.unity
+    guid: 6c9b59d560a490d4980470e012bb2954
+  - enabled: 1
+    path: Assets/Scenes/DeadBySun.unity
+    guid: bad91d97b4395a94c97d11852fb08b40
   m_configObjects: {}

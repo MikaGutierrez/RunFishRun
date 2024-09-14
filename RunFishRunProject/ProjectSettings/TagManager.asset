@@ -22,6 +22,7 @@ TagManager:
   - CrabCollidere2
   - StopTheBaby
   - Collectable
+  - StartFishParicle
   layers:
   - Default
   - TransparentFX

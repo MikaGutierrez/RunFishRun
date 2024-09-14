@@ -1005,7 +1005,7 @@ GameObject:
   - component: {fileID: 7085169845047665502}
   - component: {fileID: 2538317912084662246}
   - component: {fileID: 4242201732191350057}
-  - component: {fileID: 1319487772830063190}
+  - component: {fileID: -8727536673792936487}
   m_Layer: 9
   m_Name: Crab
   m_TagString: Crab
@@ -1094,7 +1094,7 @@ MonoBehaviour:
   - CrabHidePst
   - CrabHideIdle
   - CrabCatshFish
-  audioSr: {fileID: 1319487772830063190}
+  audioSr: {fileID: -8727536673792936487}
   audioClips:
   - {fileID: 8300000, guid: 2ba8aa5148986664294f67e6e44138db, type: 3}
   - {fileID: 8300000, guid: b3adc10191b6c7448adc3b8d41322c24, type: 3}
@@ -1174,7 +1174,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.9759674, y: 0.41114056}
   m_EdgeRadius: 0
---- !u!82 &1319487772830063190
+--- !u!82 &-8727536673792936487
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1186,18 +1186,18 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.65
-  m_Pitch: 1
+  m_Volume: 1
+  m_Pitch: 0
   Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 79
+  Priority: 71
   DopplerLevel: 1
-  MinDistance: 0.4591843
-  MaxDistance: 5.1
+  MinDistance: 1.557869
+  MaxDistance: 23.66
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 2
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -1206,22 +1206,31 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
+      value: 0.9841919
+      inSlope: -2.053304
+      outSlope: -2.053304
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.5744202
+      value: 0
+      inSlope: -0.1283315
+      outSlope: -0.1283315
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
     - serializedVersion: 3
       time: 1
       value: 0
-      inSlope: 0
-      outSlope: 0
+      inSlope: -0.12185238
+      outSlope: -0.12185238
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4

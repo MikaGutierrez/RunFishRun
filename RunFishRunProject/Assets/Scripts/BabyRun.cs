@@ -6,6 +6,7 @@ using static UnityEditor.Experimental.AssetDatabaseExperimental.AssetDatabaseCou
 public class BabyRun : Animation
 {
     private Rigidbody2D rb;
+    public GameObject Splash;
     public float speed;
     public float Acceleration;
     // Start is called before the first frame update
@@ -18,6 +19,7 @@ public class BabyRun : Animation
     }
         void Start()
     {
+        PlaySounds(audioClips[0]);
         rb = GetComponent<Rigidbody2D>();
     }
 
@@ -29,10 +31,13 @@ public class BabyRun : Animation
     }
     private IEnumerator StopBaby()
     {
+        PlaySounds(audioClips[1]);
+        Instantiate(Splash, new Vector3(transform.position.x, transform.position.y, -1f), Quaternion.Euler(-84.15f, 0f, 21.729f));
         ChangeAnimationState(animationNames[1]);
         speed = 0f;
         Acceleration = 0;
         yield return new WaitForSeconds(1f);
+        PlaySounds(audioClips[2]);
         ChangeAnimationState(animationNames[2]);
 
     }

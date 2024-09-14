@@ -6,21 +6,22 @@ using UnityEngine.SceneManagement;
 public class CharacterMovement : Animation
 {
     //Коллекционные предметы
-    public int CollectblesCount;
+    public static int CollectblesCount = 0;
 
     //Color for Fish
     public SpriteRenderer HeadRenderer;
     public SpriteRenderer BodyRenderer;
     public SpriteRenderer TailRenderer;
     public Color ColorRaw;
+    public Color ColorMedium;
     public Color ColorWellDone;
     public static Color ColorNow;
     public Color ColorInvisible;
 
     //Stamina
-    public float stamina = 100;
+    public float stamina = 200;
     public float staminaMin = 0;
-    public float staminaMax = 100;
+    public float staminaMax = 200;
     public float staminaSpeed;
     public bool staminaWork = true;
 
@@ -52,12 +53,14 @@ public class CharacterMovement : Animation
     bool facingRight;
     //GameObjects
     public GameObject SplashEffect;
+    public GameObject SplashBifEffect;
     public GameObject FishWallEffect;
     public GameObject RespawnCarPlace;
     public GameObject StopPanel;
     public GameObject GameOverPanel;
     public GameObject Ghost;
     public GameObject TapUI;
+    public GameObject EffectDeath;
     private float GumForce = 1;
 
     //Rigidbody2D
@@ -95,7 +98,7 @@ public class CharacterMovement : Animation
         if (collision.tag == "Puddle")
         {
             FirstTimeOnPuddle = true;
-            stamina = stamina + Time.deltaTime * staminaSpeed * 3;
+            stamina = stamina + Time.deltaTime * staminaSpeed * 6;
         }
         else
         {
@@ -106,17 +109,20 @@ public class CharacterMovement : Animation
     {
         if (collision.tag == "SeagullTargete2")
         {
-            GameOver();
-
+            StartCoroutine(EndSeagull());
         }
         if (collision.tag == "Baby")
         {
-            GameOver();
-
+            StartCoroutine(EndBaby());
         }
         if (collision.tag == "Puddle")
         {
             Instantiate(SplashEffect, new Vector3(transform.position.x, transform.position.y, -1f), Quaternion.Euler(-84.15f, 0f, 21.729f));
+        }
+        if (collision.tag == "StartFishParicle")
+        {
+            PlaySounds(audioClips[Random.Range(5, 7)], p1: 0.8f, p2: 0.8f);
+            Instantiate(SplashBifEffect, new Vector3(transform.position.x, transform.position.y, -1f), Quaternion.Euler(-84.15f, 0f, 21.729f));
         }
 
         if (collision.tag == "Car" && YeldWork == false) 
@@ -154,6 +160,7 @@ public class CharacterMovement : Animation
     }
     void Start()
     {
+        CollectblesCount = 0;
         TapUI.SetActive(false);
         Crabs = GameObject.FindGameObjectsWithTag("CrabTP");
         StopPanel.SetActive(false);
@@ -271,7 +278,7 @@ public class CharacterMovement : Animation
         FindClousestSeagull();
         if (staminaWork == true && staminaMin < stamina && YeldWork == false)
         { 
-            stamina = stamina - Time.deltaTime * staminaSpeed;
+            stamina = stamina - Time.deltaTime * staminaSpeed * 2;
         }
         if (staminaMax < stamina)
         {
@@ -279,7 +286,7 @@ public class CharacterMovement : Animation
         }
         if (staminaMin > stamina)
         {
-            GameOver();
+            StartCoroutine(EndSun());
         }
         if (YeldWork == false)
         {
@@ -287,8 +294,14 @@ public class CharacterMovement : Animation
             BodyRenderer.color = ColorNow;
             TailRenderer.color = ColorNow;
         }
-
-        ColorNow = ColorRaw * (stamina * 0.01f) + ColorWellDone * (1 - stamina * 0.01f);
+        if (stamina >= 100)
+        {
+            ColorNow = ColorRaw * ((stamina - 100) * 0.01f) + ColorMedium * (1 - (stamina - 100) * 0.01f);
+        }
+        else
+        {
+            ColorNow = ColorWellDone * ((stamina - 100) * -0.01f) + ColorMedium * (1 - (stamina - 100) * -0.01f);
+        }
 
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, whatIsGround);
 
@@ -353,7 +366,11 @@ public class CharacterMovement : Animation
         HeadRenderer.color = ColorInvisible;
         BodyRenderer.color = ColorInvisible;
         TailRenderer.color = ColorInvisible;
-        yield return new WaitForSeconds(3.1f);
+        yield return new WaitForSeconds(0.2f);
+        PlaySounds(audioClips[7]);
+        yield return new WaitForSeconds(0.5f);
+        PlaySounds(audioClips[8]);
+        yield return new WaitForSeconds(2.4f);
         transform.eulerAngles = new Vector3(0, 0, -141.25f);
         yield return new WaitForSeconds(0.0001f);
         rb.velocity = Vector2.right * 20 + Vector2.up * -10;
@@ -433,5 +450,22 @@ public class CharacterMovement : Animation
     }
 
 
-
+    private IEnumerator EndSun()
+    {
+        EffectDeath.SetActive(true);
+        yield return new WaitForSeconds(1.5f);
+        SceneManager.LoadScene("DeadBySun");
+    }
+    private IEnumerator EndSeagull()
+    {
+        EffectDeath.SetActive(true);
+        yield return new WaitForSeconds(1.5f);
+        SceneManager.LoadScene("DeadBySeagull");
+    }
+    private IEnumerator EndBaby()
+    {
+        EffectDeath.SetActive(true);
+        yield return new WaitForSeconds(1.5f);
+        SceneManager.LoadScene("DeadByBaby");
+    }
 }
