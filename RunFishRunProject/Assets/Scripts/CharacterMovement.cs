@@ -125,6 +125,7 @@ public class CharacterMovement : Animation
         }
         if (collision.tag == "Leg")
         {
+            PlaySounds(audioClips[Random.Range(0, 5)], volume: 0.5f, p1: 0.8f, p2: 1.1f);
             StartCoroutine(GetALeg());
         }
         if (collision.tag == "Crab")
