@@ -38,22 +38,12 @@ public class HowmanyCollectables : MonoBehaviour
                 theText.text = Text3;
             }
         }
-        if (CollcetablesNumber == 1)
+        if (CollcetablesNumber != 0)
         {
             EIconCollect.SetActive(true);
-            theText.text = "You collected " + CollcetablesNumber + " radish from 3";
-        }
-        else if (CollcetablesNumber == 2)
-        {
-            EIconCollect.SetActive(true);
-            theText.text = "You collected " + CollcetablesNumber + " radishes from 3";
-        }
-        else if (CollcetablesNumber == 3)
-        {
-            EIconCollect.SetActive(true);
-            theText.text = "You collected all 3 radishes!";
-        }
+            theText.text = "You collected " + CollcetablesNumber + " out of 3 radishes";
 
+        }
 
     }
 }

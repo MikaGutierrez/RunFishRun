@@ -8,11 +8,13 @@ public class CutsceneScript : MonoBehaviour
     public GameObject[] Frames;
     public GameObject Effect;
     public GameObject ButtonObject;
+    public GameObject PressAnyButton;
     public int WhatANumberOfFrame = 0;
     // Start is called before the first frame update
     void Start()
     {
         Effect.SetActive(true);
+        PressAnyButton.SetActive(true);
         Frames[0].SetActive(false);
         Frames[1].SetActive(false);
         Frames[2].SetActive(false);
@@ -48,6 +50,7 @@ public class CutsceneScript : MonoBehaviour
             Frames[6].SetActive(false);
             Frames[7].SetActive(true);
             ButtonObject.SetActive(true);
+            PressAnyButton.SetActive(false);
         }
     }
     private IEnumerator StartIt()

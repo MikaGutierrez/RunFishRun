@@ -1632,6 +1632,7 @@ MonoBehaviour:
   - {fileID: 973869411}
   Effect: {fileID: 1983064280}
   ButtonObject: {fileID: 1144537806}
+  PressAnyButton: {fileID: 1477699523}
   WhatANumberOfFrame: 0
 --- !u!4 &2054490600
 Transform:

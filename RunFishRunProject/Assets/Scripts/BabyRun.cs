@@ -16,6 +16,10 @@ public class BabyRun : Animation
         {
             StartCoroutine(StopBaby());
         }
+        if (collision.tag == "Player")
+        {
+            StartCoroutine(StopBaby2());
+        }
     }
         void Start()
     {
@@ -38,6 +42,15 @@ public class BabyRun : Animation
         Acceleration = 0;
         yield return new WaitForSeconds(1f);
         PlaySounds(audioClips[2]);
+        ChangeAnimationState(animationNames[2]);
+
+    }
+    private IEnumerator StopBaby2()
+    {
+        ChangeAnimationState(animationNames[1]);
+        speed = 0f;
+        Acceleration = 0;
+        yield return new WaitForSeconds(1f);
         ChangeAnimationState(animationNames[2]);
 
     }
