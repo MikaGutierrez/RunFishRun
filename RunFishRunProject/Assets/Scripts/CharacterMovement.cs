@@ -61,6 +61,7 @@ public class CharacterMovement : Animation
     public GameObject Ghost;
     public GameObject TapUI;
     public GameObject EffectDeath;
+    public GameObject EffectGradient;
     private float GumForce = 1;
 
     //Rigidbody2D
@@ -192,6 +193,14 @@ public class CharacterMovement : Animation
 
     void Update()
     {
+        if (StackInCrab == true || StackInSeagull == true)
+        {
+            TapUI.SetActive(true);
+        }
+        else
+        {
+            TapUI.SetActive(false);
+        }
         //Звуки
         if (isGrounded == true && FirstTimeOnGround == false)
         {
@@ -213,8 +222,6 @@ public class CharacterMovement : Animation
         //Застрял в крабе
         if (StackInCrab == true)
         {
-
-            TapUI.SetActive(true);
             transform.eulerAngles = new Vector3(0, 0, 0);
             if ((Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D)) && YeldWork == false && (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.D)))
             {
@@ -238,10 +245,6 @@ public class CharacterMovement : Animation
                 Crabfloat = MinCrabfloat;
             }
 
-        }
-        else
-        {
-            TapUI.SetActive(false);
         }
         //Застрял в чайке
         if (StackInSeagull == true)
@@ -436,7 +439,8 @@ public class CharacterMovement : Animation
     //Конпки Меню
     public void ExitClick()
     {
-        SceneManager.LoadScene("MainMenu");
+        Time.timeScale = 1f;
+        StartCoroutine(GoStart());
     }
     public void AgainClick()
     {
@@ -467,5 +471,11 @@ public class CharacterMovement : Animation
         EffectDeath.SetActive(true);
         yield return new WaitForSeconds(1.5f);
         SceneManager.LoadScene("DeadByBaby");
+    }
+    private IEnumerator GoStart()
+    {
+        EffectGradient.SetActive(true);
+        yield return new WaitForSeconds(1.5f);
+        SceneManager.LoadScene("MainMenu");
     }
 }
